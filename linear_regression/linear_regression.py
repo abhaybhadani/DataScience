@@ -12,14 +12,12 @@ def generate_data(n=50, noise=10.0):
     y = true_slope * X + true_intercept + noise
     return X, y
 
-
 X, y = generate_data(n=50, noise=10.0)
+
 plt.scatter(X, y, color='blue', label='Data Points')
 plt.title("Generated Data (Univariate)")
-plt.xlabel("
-")
-plt.ylabel("
-")
+plt.xlabel("")
+plt.ylabel("")
 plt.legend()
 plt.show()
 
@@ -47,10 +45,8 @@ y_pred = h_w(X, w)
 plt.scatter(X, y, color='blue', label='Actual Data')
 plt.plot(X, y_pred, color='red', label='Prediction (Closed Form)')
 plt.title("Linear Regression - Closed Form Solution")
-plt.xlabel("
-")
-plt.ylabel("
-")
+plt.xlabel("")
+plt.ylabel("")
 plt.legend()
 plt.show()
 
